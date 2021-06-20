@@ -1,0 +1,25 @@
+{
+  "name": "calculator-with-vanila",
+  "version": "1.0.0",
+  "description": "Simple Calculator build with HTML,CSS & JS",
+  "main": "app.js",
+  "scripts": {
+    "git-ac": "git add . && git commit -m"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/BixBee96/calculator-with-vanilla-js.git"
+  },
+  "keywords": [
+    "calculator",
+    "html",
+    "css",
+    "js"
+  ],
+  "author": "Bhavesh Bhimte",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BixBee96/calculator-with-vanilla-js/issues"
+  },
+  "homepage": "https://github.com/BixBee96/calculator-with-vanilla-js#readme"
+}
