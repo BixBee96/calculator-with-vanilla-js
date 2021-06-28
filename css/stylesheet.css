@@ -3,24 +3,30 @@
   padding: 0;
 }
 
+body {
+  background-color: rgb(130, 230, 38);
+}
 .cal-body {
-  width: 40%;
+  background-color: rgb(50, 192, 202);
+  max-height: 500px;
+  max-width: 300px;
   margin: auto;
-  margin-top: 2rem;
+  border-radius: 10px;
 }
 
 /* Result and equation style Box*/
 .result-display {
   min-height: 20%;
-  min-width: 95%;
+  max-width: 250px;
   margin: auto;
   display: flex;
   align-items: flex-end;
   flex-direction: column;
+  border: 2px solid black;
 }
 .result-display hr {
-  height: 0.2rem;
-  background-image: linear-gradient(to right, #123456, #654321);
+  height: 0.3rem;
+  background-image: linear-gradient(to right, #2682dd, #4ef325); /*change color*/
   width: 95%;
   border-radius: 50%;
   margin: auto;
@@ -34,35 +40,46 @@
 
 /* Input and Button style Box */
 .cal-input-box {
-  min-height: 75%;
-  min-width: 95%;
+  min-height: 300px;
+  min-width: 80%;
   margin: auto;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   flex-direction: column;
+  border: 1px red solid;
 }
 
 .cal-input {
   height: 2rem;
-  width: 95%;
+  width: 60%;
   margin: 10px;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.cal-input:focus {
+  outline: none;
+  transform: scale(1.1);
+  transition: ease-out 0.1s;
 }
 
 .btn-container {
   display: flex;
   flex-direction: column;
+  margin: 1rem;
 }
-
-.btn-submit {
-  height: 100px;
-  writing-mode: vertical-rl;
-  text-orientation: upright;
-  background-color: red;
-}
+/* button styling */
 .cal-btn {
   height: 1rem;
   width: 1rem;
   padding: 1rem;
   margin-bottom: 0.2rem;
+  text-align: center;
+}
+.btn-all-clear,
+.btn-0 {
+  width: 48%;
+  text-align: center;
 }
